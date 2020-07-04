@@ -1,0 +1,10 @@
+f=input("Enter the file name\n")
+fname=open(f)
+for line in fname:
+    line=line.rstrip()
+    a=line.count('A')
+    t=line.count('T')
+    g=line.count('G')
+    c=line.count('C')
+print("A=",a,"C=",c,"G=",g,"T=",t)
+fname.close()
